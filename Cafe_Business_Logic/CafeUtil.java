@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
+import java.util.stream;
 public class CafeUtil {
     public void militaryHoursTest(){
         int[] militaryHoursTest = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
@@ -27,14 +28,12 @@ public class CafeUtil {
             System.out.println(list);
     }
     public void leadsAtDay10(){
-        int[] leadsAtDay10 ={1,2,3,4,5,6,7,8,9,10};
+        int[] leadsAtDay10 = {1,2,3,4,5,6,7,8,9,10};
         int sum = 0;
-        for (int value :array){
-            sum += value:
-
+        for (in i : leadsAtDay10){
+            sum += i;
         }
-        return sum
-
+        System.out.println(sum);
     }
 
     public String displayMenu(){
@@ -58,14 +57,15 @@ public class CafeUtil {
                 System.out.println(priceIndex);
     
     }
-    public String raffleWinners(){
-        String[] customers = {
-            "Cindhuri", "Noah", "Sam", "Jimmy", 
-            "Ian Curtis", "Ada", "Brandon Stantman", 
-            "Zoe", "Jesse"};
-            Randon random = new Random();
-            int select = random.nextInt(arr.length);
+    // public String raffleWinners(){
+    //     String[] customers = {
+    //         "Cindhuri", "Noah", "Sam", "Jimmy", 
+    //         "Ian Curtis", "Ada", "Brandon Stantman", 
+    //         "Zoe", "Jesse"};
+    //         Randon random = new Random();
+    //         int select = random.nextInt(arr.length);
 
-            System.out.println(arr.select)
+    //         System.out.println(arr.select)
+    // }
 }
     

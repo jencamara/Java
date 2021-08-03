@@ -13,7 +13,7 @@ public class TestCafe {
         System.out.println("----- Special Alerts Test -----");
         appTest.specialsAlert();
 
-        System.out.println("Leads at day 10: %s \n", appTest.leadsAtDay10());
+        System.out.println("Leads at day 10: %s \n", appTest.leadsAtDay10(sum));
 
         System.out.println("----- Display Menu Test-----");
         appTest.displayMenu(menu1);   
@@ -23,7 +23,7 @@ public class TestCafe {
 
         System.out.printf("Highest price: %s \n",appTest.getHighestPrice(priceIndex));
 
-        System.out.println(appTest.raffleWinners(customers));
+        // System.out.println(appTest.raffleWinners(customers));
         
     }
 }
