@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 public class TestCafe {
     public static void main(String[] args) {
         // All you need to add in this file:
@@ -9,20 +9,18 @@ public class TestCafe {
         CafeUtil appTest = new CafeUtil();
         System.out.println("----- Military Hours Test -----");
         appTest.militaryHoursTest();
-        
         System.out.println("----- Special Alerts Test -----");
         appTest.specialsAlert();
-
-        System.out.println("Leads at day 10: %s \n", appTest.leadsAtDay10(sum));
-
+        System.out.printf("Leads at day 10: %s \n", appTest.leadsAtDay10());
         System.out.println("----- Display Menu Test-----");
-        appTest.displayMenu(menu1);   
-        appTest.displayMenu(menu2);   
-        
+        String[] menu1 = { "drip coffee -- $1.50", "cappucino -- $3.50","latte -- $4.50","mocha -- $3.50"};
+        String[] menu2 = {"bagel -- $1.50", "avocado toast -- $6.50", "croissant -- $4.00","quiche -- $2.00"};
+        appTest.displayMenu(menu1);
+        appTest.displayMenu(menu2);
+        double[] lineItems = {3.5, 1.5, 4.0, 4.5};
         System.out.printf("Order total: %s \n",appTest.getOrderTotal(lineItems));
-
+        double[] priceIndex = {1.5, 3.5, 4.5, 3.5, 1.5, 6.5, 4, 2};
         System.out.printf("Highest price: %s \n",appTest.getHighestPrice(priceIndex));
-
         // System.out.println(appTest.raffleWinners(customers));
         
     }
